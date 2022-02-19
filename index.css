@@ -1,0 +1,132 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#mainArticle{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: black;
+}
+
+#mainArticle>section{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainArticle>section>.imageDiv{
+    width: 70%;
+    position: relative;
+    display:inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+#mainArticle>section>.imageDiv>.mainBackgroundImage{
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#mainArticle>section>.imageDiv:after{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    bottom: 35px;
+    right: 35px;
+    left: 35px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#mainArticle>#javascriptSection>.imageDiv:after{
+    background-image: url("image/background-js.png");
+}
+
+#mainArticle>#pythonSection>.imageDiv:after{
+    background-image: url("image/background-python.png");
+}
+
+#mainArticle>#mysqlSection>.imageDiv:after{
+    background-image: url("image/background-mysql.png");
+}
+
+#mainArticle>section>.imageDiv>span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#c7b0c2, #8088b2);
+    border-radius: 50%;
+}
+
+#mainArticle>section>.imageDiv>span:nth-child(1){
+    filter: blur(5px);
+}
+
+#mainArticle>section>.imageDiv>span:nth-child(2){
+    filter: blur(10px);
+}
+
+#mainArticle>section>.imageDiv>span:nth-child(3){
+    filter: blur(20px);
+}
+
+#mainArticle>section>.imageDiv>span:nth-child(4){
+    filter: blur(55px);
+}
+
+#mainArticle>section>.imageDiv:hover > span{
+    animation: animate 0.5s linear infinite;
+}
+
+#mainArticle>section>.imageDiv:hover{
+    opacity: 1.0;
+}
+
+
+@keyframes animate{
+    from{
+        transform: rotate(0deg); 
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1200px){
+    body{
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    body::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+
+    #mainArticle{
+        display: block;
+    }
+
+    #mainArticle>section{
+        width: 100%;
+        height: 33.3%;
+    }
+
+    #mainArticle>section>.imageDiv{
+        width: auto;
+        height: 70%;
+    }
+
+    #mainArticle>section>.imageDiv>.mainBackgroundImage{
+        height: 100%;
+    }
+}
