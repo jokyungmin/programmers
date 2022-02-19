@@ -1,1 +1,71 @@
-Javascript
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javascript.css">
+    <script type="text/javascript" src="javascript.js"></script>
+    <title>프로그래머스 알고리즘</title>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <nav id="navigation">
+        <button type="button" class="backButton"><img src="../image/home.png"></button>
+        <div class="levelButtonWrap">
+            <button type="button" class="active">Level 1</button>
+            <button type="button">Level 2</button>
+            <button type="button">Level 3</button>
+            <button type="button">Level 4</button>
+            <button type="button">Level 5</button>
+        </div>
+
+        <div class="mobLevelButtonWrap">
+            <select onchange="levelChange(this);">
+                <option value="0">Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+                <option value="3">Level 4</option>
+                <option value="4">Level 5</option>
+            </select>
+        </div>
+    </nav>
+    <article id="mainArticle">
+        <!-- Level 1 -->
+        <section>
+            <div class="cardWrap"></div>
+        </section>
+        <!-- Level 2 -->
+        <section>
+            <div class="cardWrap"></div>
+        </section>
+        <!-- Level 3 -->
+        <section>
+            <div class="cardWrap"></div>
+        </section>
+        <!-- Level 4 -->
+        <section>
+            <div class="cardWrap"></div>
+        </section>
+        <!-- Level 5 -->
+        <section>
+            <div class="cardWrap"></div>
+        </section>
+    </article>
+
+    <div style="display: none;">
+        <div class="card" id="cardCopy">
+            <p class="cardTitle"></p>
+            <p class="cardLanguage">Language Javascript</p>
+            <p class="cardDifficulty">
+                <span>난이도</span>
+            </p>
+            <div class="buttonWrap">
+                <button type="button" class="showProblem">문제보기</button>
+                <button type="button" class="showCode">코드보기</button>
+            </div>
+        </div>
+
+        <div class="wait" id="wait">해당 레벨에는 해결된 문제가 없습니다.</div>
+    </div>
+    <div class="loading"><img src="../image/loading.png" class="loading_img"></div>
+</body>
+</html>

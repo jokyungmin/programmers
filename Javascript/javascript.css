@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#navigation{
+    height: 20vh
+}
+
+#navigation>.backButton{
+    border: none;
+    background-color: inherit;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#navigation>.backButton>img{
+    width: 40px;
+}
+
+#navigation>.levelButtonWrap{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navigation>.mobLevelButtonWrap{
+    width: 70%;
+    display: none;
+    margin: 0 auto;
+}
+
+#navigation>.mobLevelButtonWrap>select{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    appearance:none;
+}
+
+#navigation>.mobLevelButtonWrap>select>option{
+    color: black;
+}
+
+#navigation>.mobLevelButtonWrap>select:hover{
+    color: white;
+    background: linear-gradient(#c7b0c2, #8088b2);
+    cursor: pointer;
+}
+
+#navigation>.levelButtonWrap>button{
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 4px 0 rgb(0 0 0 / 50%);
+}
+
+#navigation>.levelButtonWrap>button.active{
+    color: white;
+    background: linear-gradient(#c7b0c2, #8088b2);
+    cursor: pointer;
+}
+
+#navigation>.levelButtonWrap>button:active{
+    box-shadow: 1px 1px 0 rgb(0 0 0 / 50%);
+    position: relative;
+    top:2px;
+}
+
+#navigation>.levelButtonWrap>button:hover{
+    color: white;
+    background: linear-gradient(#c7b0c2, #8088b2);
+    cursor: pointer;
+}
+
+#mainArticle>section{
+    height: 80vh;
+    display: none;
+}
+
+#mainArticle>section:nth-child(1){
+    display: block;
+}
+
+#mainArticle>section>p{
+    text-align: center;
+    font-size: 64px;
+    margin: 0;
+    color: white;
+    padding-bottom: 30px;
+}
+
+#mainArticle>section>.cardWrap{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-column-gap: 20px;
+}
+
+#mainArticle>section>.cardWrap>.card{
+    /* float: left; */
+    width: 100%;
+    height: 250px;
+    color: white;
+    margin: 20px 0;
+    border: 1px solid white;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+}
+
+#mainArticle>section>.wait{
+    font-size: 16px;
+    font-weight: bold;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+#mainArticle>section>.cardWrap>.card>.cardTitle{
+    font-size: 32px;
+    font-weight: 800;
+    padding: 10px;
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+    white-space:nowrap;
+    margin-bottom: 5px;
+}
+
+#mainArticle>section>.cardWrap>.card>.cardDifficulty>span{
+    vertical-align: top;
+}
+
+#mainArticle>section>.cardWrap>.card>.cardDifficulty>img{
+    width: 20px;
+}
+
+#mainArticle>section>.cardWrap>.card>.buttonWrap{
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 2px;
+}
+
+#mainArticle>section>.cardWrap>.card>.buttonWrap>button{
+    margin: 0 10px;
+    border: none;
+    padding: 6px;
+    outline: none;
+    box-shadow: 1px 4px 0 rgb(0 0 0 / 50%);
+}
+
+#mainArticle>section>.cardWrap>.card>.buttonWrap>button:hover{
+    color: white;
+    background: linear-gradient(#c7b0c2, #8088b2);
+    cursor: pointer;
+}
+
+#mainArticle>section>.cardWrap>.card>.buttonWrap>button:active{
+    box-shadow: 1px 1px 0 rgb(0 0 0 / 50%);
+    position: relative;
+    top:2px;
+}
+
+@media (max-width: 1600px){
+    #mainArticle>section>.cardWrap{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width: 1200px){
+    #mainArticle>section>.cardWrap{
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 650px){
+    #navigation>.levelButtonWrap{
+        display: none;
+    }
+
+    #navigation>.mobLevelButtonWrap{
+        display: block;
+    }
+}
+
+
+/* loading */
+.loading{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: white;
+    z-index: 9999;
+    display: none;
+}
+.loading_img{
+    position: absolute;
+    width: 200px; 
+    height: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 40%;
+}
