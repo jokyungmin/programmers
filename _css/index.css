@@ -48,15 +48,15 @@ body{
 }
 
 #mainArticle>#javascriptSection>.imageDiv:after{
-    background-image: url("image/background-js.png");
+    background-image: url("../_image/background-js.png");
 }
 
 #mainArticle>#pythonSection>.imageDiv:after{
-    background-image: url("image/background-python.png");
+    background-image: url("../_image/background-python.png");
 }
 
 #mainArticle>#mysqlSection>.imageDiv:after{
-    background-image: url("image/background-mysql.png");
+    background-image: url("../_image/background-mysql.png");
 }
 
 #mainArticle>section>.imageDiv>span{

@@ -1,3 +1,4 @@
+//두 정수 사이의 합
 function solution(a, b) {
     //a와 b가 같은 경우 아무 수나 리턴
     if(a == b){

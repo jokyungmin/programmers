@@ -1,3 +1,4 @@
+//같은 숫자는 싫어
 function solution(arr){
     if(arr.length < 1 || arr.length > 1,000,000){
         console.log(`배열의 크기는 1,000,000 이하의 자연수`);

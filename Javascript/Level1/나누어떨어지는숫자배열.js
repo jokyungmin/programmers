@@ -1,3 +1,4 @@
+//난어 떨어지는 숫자 배열
 function solution(arr, divisor) {
     //배열의 길이는 1 이상
     if(arr.length < 1){

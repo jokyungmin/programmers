@@ -1,3 +1,4 @@
+//가운데 글자 가져오기
 function solution(s) {
     if(s.length < 1 || s.length > 100){
         console.log(`문자열의 길이는 1이상 100이하인 문자열로 입력해주세요.`);

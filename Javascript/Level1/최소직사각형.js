@@ -1,3 +1,4 @@
+//최소 직사각형
 function solution(sizes) {
     //제한조건에 맞지 않는 경우
     if(sizes.length < 1 || sizes.length > 10000){
