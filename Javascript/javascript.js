@@ -11,13 +11,13 @@ let LevelOneArray = {
     title : [
         "체육복", "2016년", "최소직사각형", "나머지가 1이되는 수 찾기", "부족한 금액 계산하기",
         "가운데 글자 가져오기", "같은 숫자는 싫어", "나누어 떨어지는 숫자 배열", "두 정수 사이의 합", "문자열 내 마음대로 정렬하기", 
-        "문자열 내 p와 y의 수"
+        "문자열 내 p와 y의 수", "문자열 내림차순으로 배치하기", "문자열 다루기 기본",
     ],
 
     difficulty : [
         "2", "1", "1", "1", "1",
         "1", "2", "1", "1", "1",
-        "1",
+        "1", "1", "1",
     ],
 
     showProblemLink : [
@@ -32,6 +32,8 @@ let LevelOneArray = {
         "https://programmers.co.kr/learn/courses/30/lessons/12912?language=javascript", //두 정수 사이의 합
         "https://programmers.co.kr/learn/courses/30/lessons/12915?language=javascript", //문자열 내 마음대로 정렬하기
         "https://programmers.co.kr/learn/courses/30/lessons/12916?language=javascript", //문자열 내 p와 y의 수
+        "https://programmers.co.kr/learn/courses/30/lessons/12917?language=javascript", //문자열 내림차순으로 배치하기
+        "https://programmers.co.kr/learn/courses/30/lessons/12918?language=javascript", //문자열 다루기 기본
     ],
 
     showCodeLink : [
@@ -46,6 +48,8 @@ let LevelOneArray = {
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%91%90%EC%A0%95%EC%88%98%EC%82%AC%EC%9D%B4%EC%9D%98%ED%95%A9.js", //두 정수 사이의 합
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%AC%B8%EC%9E%90%EC%97%B4%EB%82%B4%EB%A7%88%EC%9D%8C%EB%8C%80%EB%A1%9C%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0.js", //문자열 내 마음대로 정렬하기
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%AC%B8%EC%9E%90%EC%97%B4%EB%82%B4p%EC%99%80y%EC%9D%98%EA%B0%9C%EC%88%98.js", //문자열 내 p와 y의 수
+        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%AC%B8%EC%9E%90%EC%97%B4%EB%82%B4p%EC%99%80y%EC%9D%98%EA%B0%9C%EC%88%98.js", //문자열 내림차순으로 배치하기
+        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%AC%B8%EC%9E%90%EC%97%B4%EB%82%B4p%EC%99%80y%EC%9D%98%EA%B0%9C%EC%88%98.js", //문자열 다루기 기본
     ],
 };
 
@@ -123,9 +127,9 @@ function createCard(){
                 for(let k = 1; k <= 5; k++){
                     let img = new Image();
                     if(k <= star){
-                        img.src = "../image/yellowStar.png"
+                        img.src = "../_image/yellowStar.png"
                     }else{
-                        img.src = "../image/grayStar.png"
+                        img.src = "../_image/grayStar.png"
                     }
 
                     copy.querySelector('.cardDifficulty').appendChild(img);

@@ -1,4 +1,3 @@
-//문자열 내 마음대로 정렬하기
 function solution(strings, n) {
     //strings 배열 길이 제한
     if(strings.length < 1 || strings.length > 50){

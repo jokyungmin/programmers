@@ -1,4 +1,3 @@
-//문자열 내 p와 y의 개수
 function solution(s){
     //문자열 s의 길이 제한
     if(s.length < 0 || s.length > 50){

@@ -1,4 +1,3 @@
-//체육복
 function solution(n, lost, reserve) {
     //문제 기본적인 제한사항에 해당하지 않는 경우
     //n이 2이상 30이하가 아닌경우

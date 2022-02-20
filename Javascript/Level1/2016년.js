@@ -1,4 +1,3 @@
-//2016년
 function solution(a, b) {
     //입력 받은 파라미터에 해당하는 날짜
     var inputDate = new Date("2016-" + a + "-" + b); 

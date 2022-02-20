@@ -1,4 +1,3 @@
-//부족한 금액 계산하기
 function solution(price, money, count) {
     //제한사항
     if(price < 1 || price > 2500){

@@ -1,4 +1,3 @@
-//나머지가 1이되는 수 찾긴
 function solution(n) {  
     if(n < 3 || n > 1,000,000 || !Number.isInteger(n)){
         console.log(`n은 3이상 100만 이하의 자연수`);
