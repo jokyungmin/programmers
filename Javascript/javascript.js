@@ -10,9 +10,9 @@ let LevelOneArray = {
     state : true,
     title : [
         "체육복", "2016년", "최소직사각형", "나머지가 1이되는 수 찾기", "부족한 금액 계산하기",
-        "가운데 글자 가져오기", "같은 숫자는 싫어", "나누어 떨어지는 숫자 배열", "두 정수 사이의 합", "문자열 내 마음대로 정렬하기", 
-        "문자열 내 p와 y의 수", "문자열 내림차순으로 배치하기", "문자열 다루기 기본", "서울에서 김서방 찾기", "소수 찾기",
-        "수박수박수박수박수박수?", "문자열을 정수로 바꾸기", "약수의 합",
+        "[1차] 비밀지도", "가운데 글자 가져오기", "[1차] 다트 게임", "같은 숫자는 싫어", "나누어 떨어지는 숫자 배열",
+        "두 정수 사이의 합", "문자열 내 마음대로 정렬하기", "문자열 내 p와 y의 수", "문자열 내림차순으로 배치하기", "문자열 다루기 기본",
+        "서울에서 김서방 찾기", "소수 찾기", "수박수박수박수박수박수?", "문자열을 정수로 바꾸기", "약수의 합",
     ],
 
     difficulty : [
@@ -28,7 +28,9 @@ let LevelOneArray = {
         "https://programmers.co.kr/learn/courses/30/lessons/86491?language=javascript", //최소직사각형
         "https://programmers.co.kr/learn/courses/30/lessons/87389?language=javascript", //나머지가 1이되는 수 찾기
         "https://programmers.co.kr/learn/courses/30/lessons/82612?language=javascript", //부족한 금액 계산하기
+        "https://programmers.co.kr/learn/courses/30/lessons/17681?language=javascript", //[1차] 비밀지도
         "https://programmers.co.kr/learn/courses/30/lessons/12903?language=javascript", //가운데 글자 가져오기
+        "https://programmers.co.kr/learn/courses/30/lessons/82612?language=javascript", //[1차] 다트 게임
         "https://programmers.co.kr/learn/courses/30/lessons/12906?language=javascript", //같은 숫자는 싫어
         "https://programmers.co.kr/learn/courses/30/lessons/12910?language=javascript", //나누어 떨어지는 숫자 배열
         "https://programmers.co.kr/learn/courses/30/lessons/12912?language=javascript", //두 정수 사이의 합
@@ -48,7 +50,9 @@ let LevelOneArray = {
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%B5%9C%EC%86%8C%20%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95.js", //최소직사각형
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%82%98%EB%A8%B8%EC%A7%80%EA%B0%80%201%EC%9D%B4%EB%90%98%EB%8A%94%20%EC%88%98%20%EC%B0%BE%EA%B8%B0.js", //나머지가 1이되는 수 찾기
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%B6%80%EC%A1%B1%ED%95%9C%20%EA%B8%88%EC%95%A1%20%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0.js", //부족한 금액 계산하기
+        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%B6%80%EC%A1%B1%ED%95%9C%20%EA%B8%88%EC%95%A1%20%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0.js", //[1차] 비밀지도
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EA%B0%80%EC%9A%B4%EB%8D%B0%20%EA%B8%80%EC%9E%90%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.js", //가운데 글자 가져오기
+        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%B6%80%EC%A1%B1%ED%95%9C%20%EA%B8%88%EC%95%A1%20%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0.js", //[1차] 다트 게임
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EA%B0%99%EC%9D%80%20%EC%88%AB%EC%9E%90%EB%8A%94%20%EC%8B%AB%EC%96%B4.js", //같은 숫자는 싫어
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%82%98%EB%88%84%EC%96%B4%20%EB%96%A8%EC%96%B4%EC%A7%80%EB%8A%94%20%EC%88%AB%EC%9E%90%20%EB%B0%B0%EC%97%B4.js", //나누어 떨어지는 숫자 배열
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%91%90%20%EC%A0%95%EC%88%98%20%EC%82%AC%EC%9D%B4%EC%9D%98%20%ED%95%A9.js", //두 정수 사이의 합
