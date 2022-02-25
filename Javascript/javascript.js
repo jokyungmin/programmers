@@ -12,7 +12,8 @@ let LevelOneArray = {
         "체육복", "2016년", "최소직사각형", "나머지가 1이되는 수 찾기", "부족한 금액 계산하기",
         "[1차] 비밀지도", "가운데 글자 가져오기", "[1차] 다트 게임", "같은 숫자는 싫어", "나누어 떨어지는 숫자 배열",
         "두 정수 사이의 합", "문자열 내 마음대로 정렬하기", "문자열 내 p와 y의 수", "문자열 내림차순으로 배치하기", "문자열 다루기 기본",
-        "서울에서 김서방 찾기", "소수 찾기", "수박수박수박수박수박수?", "문자열을 정수로 바꾸기", "약수의 합",
+        "서울에서 김서방 찾기", "소수 찾기", "수박수박수박수박수박수?", "문자열을 정수로 바꾸기", "시저 암호",
+        "약수의 합",
     ],
 
     difficulty : [
@@ -43,6 +44,7 @@ let LevelOneArray = {
         "https://programmers.co.kr/learn/courses/30/lessons/12922?language=javascript", //수박수박수박수박수박수?
         "https://programmers.co.kr/learn/courses/30/lessons/12925?language=javascript", //문자열을 정수로 바꾸기
         "https://programmers.co.kr/learn/courses/30/lessons/12928?language=javascript", //약수의 합
+        "https://programmers.co.kr/learn/courses/30/lessons/12926?language=javascript", //시저 암호
     ],
     showCodeLink : [
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%B2%B4%EC%9C%A1%EB%B3%B5.js", //체육복
@@ -64,7 +66,8 @@ let LevelOneArray = {
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%86%8C%EC%88%98%20%EC%B0%BE%EA%B8%B0.js", //소수 찾기
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98.js", //수박수박수박수박수박수?
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84%20%EC%A0%95%EC%88%98%EB%A1%9C%20%EB%B0%94%EA%BE%B8%EA%B8%B0.js", //문자열을 정수로 바꾸기
-        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%86%8C%EC%88%98%20%EC%B0%BE%EA%B8%B0.js", //약수의 합
+        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%95%BD%EC%88%98%EC%9D%98%20%ED%95%A9.js", //약수의 합
+        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%95%BD%EC%88%98%EC%9D%98%20%ED%95%A9.js", //시저 암호
     ],
 };
 
