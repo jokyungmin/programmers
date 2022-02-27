@@ -11,17 +11,17 @@ let LevelOneArray = {
     title : [
         "신고 결과 받기", "로또의 최고 순위와 최저 순위", "신규 아이디 추천", "숫자 문자열과 영단어", "체육복", 
         "2016년", "최소직사각형", "나머지가 1이되는 수 찾기", "부족한 금액 계산하기", "[1차] 비밀지도", 
-        "가운데 글자 가져오기", "[1차] 다트 게임", "같은 숫자는 싫어","나누어 떨어지는 숫자 배열", "두 정수 사이의 합", 
+        "가운데 글자 가져오기", "[1차] 다트 게임", "같은 숫자는 싫어", "나누어 떨어지는 숫자 배열", "두 정수 사이의 합", 
         "문자열 내 마음대로 정렬하기", "문자열 내 p와 y의 수", "문자열 내림차순으로 배치하기", "문자열 다루기 기본", "서울에서 김서방 찾기",
         "소수 찾기", "수박수박수박수박수박수?", "문자열을 정수로 바꾸기", "시저 암호", "약수의 합",
     ],
 
     difficulty : [
-        "1", "1", "1", "1", "2", 
+        "1", "1", "1", "1", "1", 
         "1", "1", "1", "1", "1",
         "1", "1", "2", "1", "1",
         "1", "1", "1", "1", "1",
-        "4", "1", "1", "3", "1", 
+        "5", "1", "1", "2", "1", 
     ],
 
     showProblemLink : [
@@ -57,10 +57,10 @@ let LevelOneArray = {
 
     ],
     showCodeLink : [
-        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%B2%B4%EC%9C%A1%EB%B3%B5.js", //신고 결과 받기
-        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%B2%B4%EC%9C%A1%EB%B3%B5.js", //로또의 최고 순위와 최저 순위
-        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%B2%B4%EC%9C%A1%EB%B3%B5.js", //신규 아이디 추천
-        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%B2%B4%EC%9C%A1%EB%B3%B5.js", //숫자 문자열과 영단어
+        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%8B%A0%EA%B3%A0%20%EA%B2%B0%EA%B3%BC%20%EB%B0%9B%EA%B8%B0.js", //신고 결과 받기
+        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EB%A1%9C%EB%98%90%EC%9D%98%20%EC%B5%9C%EA%B3%A0%20%EC%88%9C%EC%9C%84%EC%99%80%20%EC%B5%9C%EC%A0%80%20%EC%88%9C%EC%9C%84.js", //로또의 최고 순위와 최저 순위
+        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%8B%A0%EA%B7%9C%20%EC%95%84%EC%9D%B4%EB%94%94%20%EC%B6%94%EC%B2%9C.js", //신규 아이디 추천
+        "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%88%AB%EC%9E%90%20%EB%AC%B8%EC%9E%90%EC%97%B4%EA%B3%BC%20%EC%98%81%EB%8B%A8%EC%96%B4.js", //숫자 문자열과 영단어
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/%EC%B2%B4%EC%9C%A1%EB%B3%B5.js", //체육복
 
         "https://github.com/jokyungmin/programmers/blob/main/Javascript/Level1/2016%EB%85%84.js", //2016년
