@@ -47,16 +47,18 @@ function loginCheck(){
             //통신 성공
             success: function(data){
                 $('.loading').fadeOut();
+                doubleClick = true;
                 if(data.success){
                     //쿼리 성공
                     if(data.value[0].count == 0){
                         //일치하는 계정이 없는 경우
-                        alert(data.message);
+                        let obj = {content: data.message}
+                        showAlert(obj);
                         return;
                     }
 
                     //일치하는 계정이 있으면 첫번째 페이지로 이동
-                    // location.href = "";
+                    location.href = "page/problem.php";
                 }else{
                     //쿼리 실패
                     dbError(data.error);
@@ -68,7 +70,8 @@ function loginCheck(){
             },
         });
     }else{
-        alert("잠시만 기다려주세요.");
+        let obj = {content: "잠시만 기다려주세요."}
+        showAlert(obj);
     }
 }
 

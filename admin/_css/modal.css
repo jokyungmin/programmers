@@ -1,0 +1,126 @@
+#modalBg{
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #fff;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#alertModal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 10000;
+}
+
+.modalForm #alertTitle{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modalForm #alertContent{
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.modalForm{
+    width: 400px;
+    height: 200px;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+}
+
+#alertModal .buttonWrap{
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    width: 100%;
+}
+
+#alertModal .buttonWrap #alertButton{
+    height: 40px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: linear-gradient(#c9d6ff,#e2e2e2);
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#alertModal .buttonWrap #alertButton:hover{
+    opacity: 1;
+}
+
+#confirmModal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 10000;
+}
+
+.modalForm #confirmTitle{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modalForm #confirmContent{
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.modalForm{
+    width: 400px;
+    height: 200px;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+}
+
+#confirmModal .buttonWrap{
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    width: 100%;
+}
+
+#confirmModal .buttonWrap button{
+    height: 40px;
+    width: 100px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: linear-gradient(#c9d6ff,#e2e2e2);
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#confirmModal .buttonWrap button:hover{
+    opacity: 1;
+}
