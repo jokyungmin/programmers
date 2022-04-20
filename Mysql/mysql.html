@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../admin/_css/modal.css">
     <link rel="stylesheet" href="../_css/sub.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+
+    <script type="text/javascript" src="../../_js/common.js"></script>
     <script type="text/javascript" src="mysql.js"></script>
     <title>프로그래머스 알고리즘</title>
 </head>
-<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<body>
     <nav id="navigation">
         <button type="button" class="backButton"><img src="../_image/home.png"></button>
         <div class="levelButtonWrap">
@@ -54,7 +58,7 @@
     <div style="display: none;">
         <div class="card" id="cardCopy">
             <p class="cardTitle"></p>
-            <p class="cardLanguage">Language Mysql</p>
+            <p class="cardLanguage">Language Javascript</p>
             <p class="cardDifficulty">
                 <span>난이도</span>
             </p>
@@ -66,6 +70,42 @@
 
         <div class="wait" id="wait">해당 레벨에는 해결된 문제가 없습니다.</div>
     </div>
-    <div class="loading"><img src="../image/loading.png" class="loading_img"></div>
+    <div class="loading"><img src="../_image/loading.png" class="loading_img"></div>
+
+    <!-- 알림 모달 -->
+    <div id="modalBg"></div>
+    <article id="alertModal">
+        <form class="modalForm">
+            <h1 id="alertTitle"></h1>
+            <div id="alertContent"></div>
+            <div class="buttonWrap">
+                <button type="button" id="alertButton"></button>
+            </div>
+        </form>
+    </article>
+
+    <!-- 확인 모달 -->
+    <article id="confirmModal">
+        <form class="modalForm">
+            <h1 id="confirmTitle"></h1>
+            <div id="confirmContent"></div>
+            <div class="buttonWrap">
+                <button type="button" id="firstConfirmButton"></button>
+                <button type="button" id="secondConfirmButton"></button>
+            </div>
+        </form>
+    </article>
+
+    <!-- 모달 -->
+    <div id="codeModalBackground"></div>
+    <div id="codeModal">
+        <form id="codeModalForm">
+            <h3>코드</h3>
+            <pre id="code"></pre>
+        </form>
+        <div class="buttonWrap">
+            <button type="button" id="cancelButton" class="cancelButton">취소</button>
+        </div>
+    </div>
 </body>
 </html>

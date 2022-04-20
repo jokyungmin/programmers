@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="_css/index.css?v=<?php echo date("H:i:s");?>">
     <link rel="stylesheet" href="_css/modal.css?v=<?php echo date("H:i:s");?>">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="_js/common.js?v=<?php echo date("H:i:s");?>"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+    <script type="text/javascript" src="../_js/common.js?v=<?php echo date("H:i:s");?>"></script>
     <script type="text/javascript" src="_js/index.js?v=<?php echo date("H:i:s");?>"></script>
 </head>
 <body>
@@ -26,7 +26,7 @@
             </div>
         </form>
     </article>
-    <footer style="position: fixed; bottom: 10px; left: 50%;">
+    <footer>
         <a href='https://kr.freepik.com/vectors/background' target="_black">Background 벡터는 freepik - kr.freepik.com가 제작함</a>
     </footer>
 

@@ -8,7 +8,11 @@
     $session = new Session();
 
     if(isset($param["method"])){
-        $param["method"]($param["value"]);
+        if(isset($param["value"])){
+            $param["method"]($param["value"]);
+        }else{
+            $param["method"]();
+        }
     }else{
         echo "존재하지 않는 함수입니다.";
     }
@@ -19,12 +23,8 @@
         $session = $GLOBALS["session"];
 
         $sql = "select count(*) as count, idx from admin ";
-        //조건문
-        $where = "where id = ".$db->nullCheck($param["id"])." ";
-        $where .= "and pw = ".$db->nullCheck($param["password"])." ";
-    
-        //최종 쿼리
-        $sql .= $where;
+        $sql .= "where id = ".$db->nullCheck($param["id"])." ";
+        $sql .= "and pw = ".$db->nullCheck($param["password"])." ";
         $result = $db->dbSelect($sql);
         if($result["success"]){
             if($result["value"][0]["count"] == 1){
@@ -40,5 +40,13 @@
         }
 
         echo json_encode($result, JSON_UNESCAPED_UNICODE);
+    }
+
+    //관리자 로그아웃 함수
+    function logout(){
+        $session = $GLOBALS["session"];
+        $session->deleteSession("admin");
+
+        echo true;
     }
 ?>

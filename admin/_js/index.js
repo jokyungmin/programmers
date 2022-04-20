@@ -1,7 +1,6 @@
 let idInput = null;
 let passwordInput = null;
 let loginButton = null;
-let doubleClick = true;
 
 $(document).ready(function(){
     init();
@@ -12,10 +11,21 @@ $(document).ready(function(){
 function loginInputEvent(){
     idInput.onkeyup = function(){
         inputChangeEvent();
+        inputEnterEvent();
+        
     }
 
     passwordInput.onkeyup = function(){
         inputChangeEvent();
+        inputEnterEvent();
+    }
+}
+
+function inputEnterEvent(){
+    if(window.event.keyCode == "13"){
+        if(loginButton.className.indexOf('active') != -1){
+            loginCheck();
+        }
     }
 }
 
@@ -34,7 +44,7 @@ function loginCheck(){
         //로딩 이미지 필요
         $('.loading').fadeIn();
         $.ajax({
-            url: "../_server/LoginModel.php",
+            url: "../../_server/LoginModel.php",
             type: "post",
             dataType : 'json',
             data: {
@@ -58,7 +68,7 @@ function loginCheck(){
                     }
 
                     //일치하는 계정이 있으면 첫번째 페이지로 이동
-                    location.href = "page/problem.php";
+                    location.href = "page/problem.php?kind=javascript";
                 }else{
                     //쿼리 실패
                     dbError(data.error);

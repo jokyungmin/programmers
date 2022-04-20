@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "bazzi";
+    src: url("../_font/Bazzi.woff");
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -7,6 +12,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "bazzi";
 }
 
 #loginArticle{
@@ -28,12 +34,12 @@ body{
     width: 600px;
     height: 400px;
     background-color: #fff;
-    border-radius: 12px;
     padding: 10px;
     background-image: url("../_image/loginBg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: inherit;
 }
 
 #inputWrap{

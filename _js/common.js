@@ -1,3 +1,6 @@
+let doubleClick = true;
+let param = null; //Url Parameter
+
 //통신 에러시 처리
 function ajaxError(error){
     console.log(error.responseText);
@@ -139,6 +142,14 @@ function undefiendCheck(text, returnText){
     return text;
 }
 
+//넘겨 받은 배열에 두번째 파라미터가 있는지 체키하여 있으면 두번째 파라미터, 없으면 세번째 파라미터 return
+function arrayCheck(array, compareValue, basicValue){
+    if(array.indexOf(compareValue) == -1){
+        return basicValue;
+    }
+    return compareValue;
+}
+
 function saveErrorMsg(msg){
     $.ajax({
         url: "../_server/ErrorModel.php",
@@ -153,6 +164,97 @@ function saveErrorMsg(msg){
     });
 }
 
-function movePage(link){
+//관리자 페이지 이동 함수
+//넘겨 받은 값들을 전부 url에 &와 함께 붙여서 이동
+function movePage(obj){
+    var link = "?";
+    for(var key in obj){
+        link += "&" + key + "=" + obj[key];
+    }
+
     location.href = link;
+}
+
+function reload(){
+    location.reload();
+}
+
+function showAlertLink(param){
+    location.href = param.link;
+}
+
+//관리자 페이지 로그아웃 함수
+function logout(){
+    if(doubleClick){
+        doubleClick = false;
+        //로딩 이미지 필요
+        $('.loading').fadeIn();
+        $.ajax({
+            url: "../_server/LoginModel.php",
+            type: "post",
+            dataType : 'json',
+            data: {
+                method: "logout",
+            },
+            //통신 성공
+            success: function(data){
+                if(data){
+                    $('.loading').fadeOut();
+                    doubleClick = true;
+                    let obj = {content: "로그아웃하였습니다.", positiveMethod: "showAlertLink", positiveParam: {link: "../index.php"}}
+                    showAlert(obj);
+                }else{
+                    //쿼리 실패
+                    dbError(data.error);
+                }
+            },
+            //통신 에러
+            error: function(error){
+                ajaxError(error);
+            },
+        });
+    }else{
+        let obj = {content: "잠시만 기다려주세요."}
+        showAlert(obj);
+    }
+}
+
+//현재 url에 해당하는 모든 key, value를 object 형식으로 반환해주는 함수
+function getParameter(){
+    let param = location.href.split("?");
+    let result = {};
+    if(param.length > 1){
+        const urlParams = new URLSearchParams("?" + param[1]);
+        const entries = urlParams.entries();
+        
+        for(const entrie of entries){
+            result[entrie[0]] = entrie[1];
+        }
+    }
+    
+    return result;
+}
+
+//숫자의 크기가 10보다 작으면 앞에 0를 붙여주고 return해주는 함수
+function addZeroText(number){
+    if(number < 10){
+        return "0" + number;
+    }
+    return number;
+}
+
+//날짜 형식 format 함수
+function dateFormat(date, type){
+    let addText = "";
+    let year = date.substring(0, 4);
+    let month = date.substring(5, 7);
+    let day = date.substring(8, 10);
+
+    if(type == 1){
+        addText = "-";
+    }else if(type == 2){
+        addText = ".";
+    }
+
+    return year + addText + month + addText + day;
 }

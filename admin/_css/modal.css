@@ -124,3 +124,100 @@
 #confirmModal .buttonWrap button:hover{
     opacity: 1;
 }
+
+/* 등록 모달 */
+#uploadModal{
+    display: none;
+    position: fixed;
+    width: 70%;
+    height: 80%;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    overflow-y: auto;
+}
+
+#uploadModalBackground{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #aaa;
+    opacity: 0.6;
+    display: none;;
+}
+
+#uploadModalForm>h3{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#uploadModal>.buttonWrap{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 30px;
+}
+
+#uploadModal>.buttonWrap>button{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 6px;
+    color: white;
+    margin: 0 2px;
+    cursor: pointer;
+    width: 100px;
+}
+
+#uploadModal>.buttonWrap>.uploadButton{
+    background: #1798f9;
+    box-shadow: inset 0 0 4px black;
+}
+
+#uploadModal>.buttonWrap>.cancelButton{
+    background: #e5092e;
+    box-shadow: inset 0 0 4px black;
+}
+
+#uploadModalForm>table{
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#uploadModalForm .modalKey{
+    background-color: #ddd;
+    text-align: center;
+    height: 40px;
+}
+
+#uploadModalForm .modalValue{
+    background-color: #f3f6f7;
+    text-align: center;
+}
+
+#uploadModalForm .modalValue>input{
+    width: 90%;
+    padding: 6px;
+}
+
+#uploadModalForm .modalValue>select{
+    width: 92%;
+    padding: 6px;
+}
+
+#uploadModalForm .modalValue>textarea{
+    width: 90%;
+    padding: 6px;
+    resize: none;
+    height: 300px;
+    background-color: black;
+    color: white;
+}

@@ -4,6 +4,8 @@ let javascriptSection = null;
 let pythonSection = null;
 let mysqlSection = null;
 
+let body = null;
+
 window.onload = function(){
     init();
 }
@@ -40,6 +42,19 @@ function init(){
     pythonSection = document.querySelector('#pythonSection');
     mysqlSection = document.querySelector('#mysqlSection');
     sectionArray = [javascriptSection, pythonSection, mysqlSection];
+
+    body = document.querySelector('body');
+    body.addEventListener('oncontextmenu', function(){
+        return false;
+    });
+
+    body.addEventListener('ondragstart', function(){
+        return false;
+    });
+
+    body.addEventListener('onselectstart', function(){
+        return false;
+    });
 
     sectionClickEvent();
 }
