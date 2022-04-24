@@ -144,6 +144,10 @@ function createTableData(value){
         problemWrap.appendChild(noPostClone);
     }
 
+    if(value.length >= 14){
+        document.querySelector('section').style.height = "100%";
+    }
+
     //순서 변경과 관련된 event
     changeSequenceEvent();
 }

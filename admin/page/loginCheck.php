@@ -7,7 +7,7 @@
         //로그인 페이지 경로
         echo "
         <script>
-            showAlert({content: '관리자 로그인을 하지 않았습니다.', positiveMethod: 'movePage', positiveParam: '../index.php'});
+            showAlert({content: '관리자 로그인을 하지 않았습니다.', positiveMethod: 'moveLoginPage', positiveParam: null});
         </script>
         ";
     }

@@ -6,7 +6,7 @@
 body{
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
     font-family: "bazzi";
 }
 
@@ -72,7 +72,7 @@ aside>ul>li:first-child{
 
 section{
     margin-left: 250px;
-    height: 100vh;;
+    height: 100vh;
     width: calc(100% - 250px);
     display: inline-block;
     background: linear-gradient(to bottom, #E2E2E2 0%, #FFFBF6 100%);
@@ -112,6 +112,7 @@ section{
     width: 85%;
     margin: 0 auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #problemTable{
@@ -119,6 +120,7 @@ section{
     margin: 0 auto;
     margin-top: 10px;
     border-collapse: collapse;
+    overflow-y: scroll;
 }
 
 #problemTable .updateBtn{

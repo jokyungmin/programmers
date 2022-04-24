@@ -175,6 +175,10 @@ function movePage(obj){
     location.href = link;
 }
 
+function moveLoginPage(){
+    location.href = "../index.php";
+}
+
 function reload(){
     location.reload();
 }

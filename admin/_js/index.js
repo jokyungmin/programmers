@@ -44,7 +44,7 @@ function loginCheck(){
         //로딩 이미지 필요
         $('.loading').fadeIn();
         $.ajax({
-            url: "../../_server/LoginModel.php",
+            url: "../_server/LoginModel.php",
             type: "post",
             dataType : 'json',
             data: {
