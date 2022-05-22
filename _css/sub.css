@@ -8,11 +8,21 @@ body{
     height: 20vh
 }
 
-#navigation>.backButton{
+#navigation>.buttonDiv>.backButton{
     border: none;
     background-color: inherit;
     padding: 10px;
     cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#navigation>.buttonDiv{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #navigation>.backButton>img{
