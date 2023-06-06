@@ -22,7 +22,7 @@
         $db = $GLOBALS["db"];
         $session = $GLOBALS["session"];
 
-        $sql = "select count(*) as count, idx from admin ";
+        $sql = "select count(*) as count, idx from programmers_admin ";
         $sql .= "where id = ".$db->nullCheck($param["id"])." ";
         $sql .= "and pw = ".$db->nullCheck($param["password"])." ";
         $result = $db->dbSelect($sql);

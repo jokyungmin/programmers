@@ -18,7 +18,7 @@
     //문제 등록 함수
     function uploadProblem($param){
         $db = $GLOBALS["db"];
-        $tableName = $param["problemKind"];
+        $tableName = "programmers_".$param["problemKind"];
 
         $sql = "insert into $tableName(title, difficulty, showProblemLink, code, level, regdate) values(";
         $sql .= $db->nullCheck($param["title"]).",";
@@ -34,7 +34,7 @@
     //문제 수정 함수
     function updateProblem($param){
         $db = $GLOBALS["db"];
-        $tableName = $param["problemKind"];
+        $tableName = "programmers_".$param["problemKind"];
 
         $sql = "update $tableName set ";
         $sql .= "title = ".$db->nullCheck($param["title"]).",";
@@ -50,7 +50,7 @@
     //문제 삭제 함수
     function deleteProblem($param){
         $db = $GLOBALS["db"];
-        $tableName = $param["problemKind"];
+        $tableName = "programmers_".$param["problemKind"];
 
         $idxArray = json_decode($param["checkIndexArray"], true);
         $sql = "delete from $tableName where idx = ";
@@ -68,7 +68,7 @@
     //문제 순서 변경 함수
     function changeSequenceProblem($param){
         $db = $GLOBALS["db"];
-        $tableName = $param["problemKind"];
+        $tableName = "programmers_".$param["problemKind"];
 
         $idxArray = json_decode($param["idxArray"], true);
         for($i = 0; $i < count($idxArray); $i++){
@@ -83,7 +83,7 @@
     //문제 목록을 가져오는 함수
     function selectProblem($param){
         $db = $GLOBALS["db"];
-        $tableName = $param["problemKind"];
+        $tableName = "programmers_".$param["problemKind"];
 
         $sql = "select * from $tableName ";
         $sql .= "where level = ".$param["level"]." ";

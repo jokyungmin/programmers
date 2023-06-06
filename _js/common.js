@@ -152,7 +152,7 @@ function arrayCheck(array, compareValue, basicValue){
 
 function saveErrorMsg(msg){
     $.ajax({
-        url: "../_server/ErrorModel.php",
+        url: "../../_server/ErrorModel.php",
         type: "post",
         dataType : 'json',
         data: {
@@ -194,7 +194,7 @@ function logout(){
         //로딩 이미지 필요
         $('.loading').fadeIn();
         $.ajax({
-            url: "../_server/LoginModel.php",
+            url: "../../_server/LoginModel.php",
             type: "post",
             dataType : 'json',
             data: {
